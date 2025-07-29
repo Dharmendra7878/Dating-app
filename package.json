@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://dharmendra7878.github.io/Valentine-Day-project",
+  "homepage": "https://dharmendra7878.github.io/Dating_project",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
