@@ -1,12 +1,30 @@
-# React + Vite
+# ❤️ Love Button React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a fun and interactive mini React application featuring a "Yes" and "No" button where the "Yes" button grows every time you click "No". It creates a playful interaction experience for users, typically themed around proposals or love confessions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Features
 
-## Expanding the ESLint configuration
+- Interactive buttons built using React hooks (`useState`)
+- The "Yes" button increases in size as the "No" button is clicked
+- Responsive design with simple CSS
+- Love-themed styling and animation (e.g., GIF when "Yes" is pressed)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📷 Image & Assets Disclaimer
+
+- This project uses a **random image and GIF** for demonstration and fun.
+- **Note:** These assets are included for **personal/demo use only**.
+- Please do **not misuse,  of these images.
+- You can replace them with your own assets located in the `/assets` folder.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/love-button-app.git
+cd love-button-app
