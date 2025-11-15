@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -58,4 +59,195 @@
 
 .animate-heartbeat {
   animation: heartbeat 1.5s infinite;
+=======
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom right, #fce7f3, #fff1f2, #ffe4e6);
+  overflow-x: hidden;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 2rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ask-screen,
+.yes-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+  max-width: 100%;
+}
+
+.bear-roses {
+  height: 180px;
+  max-width: 90%;
+  margin-bottom: 20px;
+  animation: heartbeat 1.5s infinite;
+}
+
+.ask-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e11d48;
+  animation: pulse 2s infinite;
+  margin-bottom: 1rem;
+}
+
+.button-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ✅ YES BUTTON scales with fontSize */
+.yes-button {
+  background: linear-gradient(to right, #ec4899, #f43f5e);
+  color: white;
+  padding: 0.5em 1.2em;
+  font-weight: bold;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: 0 4px 14px rgba(236, 72, 153, 0.4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-width: 90vw;
+  line-height: 1.2;
+}
+
+/* ✅ NO BUTTON stays fixed */
+.no-button {
+  background-color: #fb7185;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: 0 4px 14px rgba(244, 63, 94, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  width: auto; /* 👈 fixed width */
+  height:50px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+}
+
+/* Hover effects */
+.yes-button:hover,
+.no-button:hover {
+  transform: scale(1.05);
+}
+
+/* Yes screen */
+.yes-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #be123c;
+  animation: pulse 2s infinite;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.yes-sub {
+  font-size: 1.2rem;
+  color: #e11d48;
+  margin: 4px 0;
+}
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.side-gif {
+  width: 80px;
+  height: 80px;
+  border-radius: 1rem;
+}
+
+.main-img {
+  width: 160px;
+  height: auto;
+  border-radius: 2rem;
+  box-shadow: 0 10px 20px rgba(244, 114, 182, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  25% { transform: scale(1.1); }
+  50% { transform: scale(0.95); }
+  75% { transform: scale(1.05); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .ask-title {
+    font-size: 1.75rem;
+  }
+
+  .yes-title {
+    font-size: 1.5rem;
+  }
+
+  .yes-sub {
+    font-size: 1rem;
+  }
+
+  .button-row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .yes-button,
+  .no-button {
+    width: 100%;
+  }
+
+  .side-gif {
+    width: 70px;
+    height: 70px;
+  }
+
+  .main-img {
+    width: 140px;
+  }
+
+  .bear-roses {
+    height: 150px;
+  }
+
+  .container {
+    padding: 1rem 0.5rem;
+  }
+>>>>>>> 4692a93b471bcaecb4da4021c9aba419dc16d765
 }
